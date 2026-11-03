@@ -124,7 +124,7 @@ def refresh_tokens(
     db: Session,
     payload: AuthRefreshRequest,
 ) -> AuthTokensResponse:
-    data = security.decode_refresh_token(payload.refresh_token)
+    data = security.decode_refresh_token(payload.refresh_token.get_secret_value())
 
     try:
         user_id = UUID(data.get("sub"))
