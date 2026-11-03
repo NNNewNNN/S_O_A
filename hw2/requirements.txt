@@ -8,4 +8,8 @@ PyJWT==2.15.1
 bcrypt==5.0.0
 python-multipart==0.0.32
 fastapi-code-generator==0.8.1
+<<<<<<< HEAD
 requests==2.34.2
+=======
+requests==2.34.2
+>>>>>>> b2781e175791630ec59eaa7cfeea2e9c7540129c
